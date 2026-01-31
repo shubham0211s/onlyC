@@ -1,0 +1,2 @@
+auto static local extern register
+Escape sequence in C
