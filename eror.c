@@ -6,13 +6,25 @@
 
 // }
 
+// #include <stdio.h>
+// int main()
+// {
+//     int x;
+//     printf("Enter your number:" );
+//     scanf("%d",&x);
+//     printf("Your number is %d",x);
+
+//     return 0;
+
+// }
+
 #include <stdio.h>
 int main()
 {
-    int x;
+    char x[5];
     printf("Enter your number:" );
-    scanf("%d",&x);
-    printf("Your number is %d",x);
+    scanf("%4s",x);
+    printf("Your number is %s",x);
 
     return 0;
 
