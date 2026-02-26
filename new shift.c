@@ -1,15 +1,20 @@
 #include <stdio.h>
-int main()
-{
-    int arr[10];
-    int size, position,choice;
+
+int main(){
+    int arr[5] = {1,2,3,4,5};
+    int size,position,choice;
     size = 5;
-    for(int i = 0;i < 5; ++i){
-    printf("Enter the value for an array: ");
+    printf("Position No. ");
+    scanf("%d",&position);
+    printf("Choice number to be inserted: ");
+    scanf("%d",&choice);
+for ( int i = size; i > position;i--){
+    arr[i]= arr[i-1];
+}
+arr[position]= choice;
+size ++;                  //IMPORTANT FOR SIZE INCREASING
 
-        scanf("%d",&arr[i]);
-    }
-    for(int i = 0; i < 5;i++) {
+for (int i= 0;i<size;i++){
     printf("%d ",arr[i]);
-
-}}
+}
+}
